@@ -1,0 +1,63 @@
+.page {
+  font-family: "Roboto", sans-serif;
+}
+.page__body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 24px 20px 80px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/src/images/header-image.png);
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu-opener {
+  display: block;
+  background-image: url(../src/images/svg/menu.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 12px;
+}
+.header__menu-opener:hover {
+  background-image: url(../src/images/svg/menu-hover.svg);
+}
+.header__call {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../src/images/svg/call-icon.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__title {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+.header__title::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+
+.logo__image {
+  height: 48px;
+}/*# sourceMappingURL=main.css.map */
