@@ -4,12 +4,22 @@
   }
 }
 
+$header-top-padding: 24px;
+$blue: #0075ff;
+
 .page {
   font-family: "Roboto", sans-serif;
 
   &__body {
     margin: 0;
   }
+}
+
+.top-actions {
+display: grid;
+grid-template-columns: 18px 1fr 18px;
+justify-items: center;
+align-items: center;
 }
 
 .icon {
@@ -26,6 +36,22 @@
     width: 24px;
     height: 24px;
   }
+
+  &--menu {
+    background-image: url(../src/images/svg/menu.svg);
+
+    &:hover {
+      background-image: url(../src/images/svg/menu-hover.svg);
+    }
+  }
+
+  &--phone {
+    background-image: url(../src/images/svg/call-icon.svg);
+  }
+
+  &--cross {
+    background-image: url(../src/images/svg/cross.svg);
+  }
 }
 
 .header {
@@ -40,25 +66,10 @@
 
     box-sizing: border-box;
     height: 100vh;
-    padding: 24px 0 80px;
-  }
-
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__menu-opener {
-    background-image: url(../src/images/svg/menu.svg);
-
-    &:hover {
-      background-image: url(../src/images/svg/menu-hover.svg);
-    }
+    padding: $header-top-padding 0 80px;
   }
 
   &__call {
-    background-image: url(../src/images/svg/call-icon.svg);
     text-decoration: none;
 
     @include onDesktop {
@@ -74,7 +85,7 @@
         color: #fff;
         letter-spacing: 2px;
         text-transform: uppercase;
-
+        pointer-events: none;
         width: max-content;
         display: block;
         padding: 0 16px 0 0;
@@ -131,5 +142,16 @@
 
   @include onDesktop() {
     padding: 0 40px;
+  }
+}
+
+.menu {
+  background-color: $blue;
+  &__content {
+    padding: $header-top-padding 0;
+
+    height: 100vh;
+
+    box-sizing: border-box;
   }
 }

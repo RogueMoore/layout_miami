@@ -5,6 +5,13 @@
   margin: 0;
 }
 
+.top-actions {
+  display: grid;
+  grid-template-columns: 18px 1fr 18px;
+  justify-items: center;
+  align-items: center;
+}
+
 .icon {
   display: block;
   background-size: cover;
@@ -18,6 +25,18 @@
     width: 24px;
     height: 24px;
   }
+}
+.icon--menu {
+  background-image: url(../src/images/svg/menu.svg);
+}
+.icon--menu:hover {
+  background-image: url(../src/images/svg/menu-hover.svg);
+}
+.icon--phone {
+  background-image: url(../src/images/svg/call-icon.svg);
+}
+.icon--cross {
+  background-image: url(../src/images/svg/cross.svg);
 }
 
 .header {
@@ -33,19 +52,7 @@
   height: 100vh;
   padding: 24px 0 80px;
 }
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__menu-opener {
-  background-image: url(../src/images/svg/menu.svg);
-}
-.header__menu-opener:hover {
-  background-image: url(../src/images/svg/menu-hover.svg);
-}
 .header__call {
-  background-image: url(../src/images/svg/call-icon.svg);
   text-decoration: none;
 }
 @media (min-width: 1024px) {
@@ -60,6 +67,7 @@
     color: #fff;
     letter-spacing: 2px;
     text-transform: uppercase;
+    pointer-events: none;
     width: -moz-max-content;
     width: max-content;
     display: block;
@@ -113,4 +121,13 @@
   .container {
     padding: 0 40px;
   }
+}
+
+.menu {
+  background-color: #0075ff;
+}
+.menu__content {
+  padding: 24px 0;
+  height: 100vh;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
