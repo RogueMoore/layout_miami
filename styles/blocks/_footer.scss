@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0 24px 0;
+
+  height: 320px;
+  background-image: url(/src/images/footer-background.png);
+  background-size: cover;
+  background-position: center;
+
+  @include onDesktop {
+    height: 360px;
+
+    padding: 0 0 36px 0;
+  }
+}
