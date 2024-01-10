@@ -1,5 +1,6 @@
 .page {
   font-family: "Roboto", sans-serif;
+  scroll-behavior:smooth;
 
   &__body {
     margin: 0;
@@ -16,6 +17,33 @@
 
     &:target {
       transform: translateX(0);
+    }
+  }
+
+  &__section {
+    margin: 0 0 64px 0;
+  }
+
+  &__section-title {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+
+    &::after {
+      content: "";
+      margin: 4px auto 0;
+
+      background-image: url(/src/images/svg/crown.svg);
+      display: block;
+      width: 23px;
+      height: 16px;
+
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }

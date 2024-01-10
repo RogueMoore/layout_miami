@@ -1,5 +1,6 @@
 .page {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 .page__body {
   margin: 0;
@@ -14,6 +15,28 @@
 }
 .page__menu:target {
   transform: translateX(0);
+}
+.page__section {
+  margin: 0 0 64px 0;
+}
+.page__section-title {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1.5px;
+}
+.page__section-title::after {
+  content: "";
+  margin: 4px auto 0;
+  background-image: url(/src/images/svg/crown.svg);
+  display: block;
+  width: 23px;
+  height: 16px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .container {
