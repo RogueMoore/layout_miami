@@ -1,0 +1,10 @@
+.menu {
+  background-color: $blue;
+  &__content {
+    padding: $header-top-padding 0;
+
+    height: 100vh;
+
+    box-sizing: border-box;
+  }
+}
