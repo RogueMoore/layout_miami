@@ -5,16 +5,33 @@
   margin: 0;
 }
 
+.icon {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+@media (min-width: 1024px) {
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .header {
+  background-size: cover;
+  background-position: center;
+  background-image: url(/src/images/header-image.png);
+}
+.header__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   height: 100vh;
-  padding: 24px 20px 80px;
-  background-size: cover;
-  background-position: center;
-  background-image: url(/src/images/header-image.png);
+  padding: 24px 0 80px;
 }
 .header__nav {
   display: flex;
@@ -22,25 +39,38 @@
   align-items: center;
 }
 .header__menu-opener {
-  display: block;
   background-image: url(../src/images/svg/menu.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 12px;
 }
 .header__menu-opener:hover {
   background-image: url(../src/images/svg/menu-hover.svg);
 }
 .header__call {
-  display: block;
-  width: 18px;
-  height: 18px;
   background-image: url(../src/images/svg/call-icon.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  .header__call::before {
+    content: "+1 234 555-55-55";
+    position: relative;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: -moz-max-content;
+    width: max-content;
+    display: block;
+    padding: 0 16px 0 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .header__call:hover::before {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 .header__title {
   color: #fff;
@@ -48,6 +78,13 @@
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -1px;
+}
+@media (min-width: 1024px) {
+  .header__title {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1.5px;
+  }
 }
 .header__title::before {
   content: "";
@@ -60,4 +97,20 @@
 
 .logo__image {
   height: 48px;
+}
+@media (min-width: 1024px) {
+  .logo__image {
+    height: 80px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 20px;
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
