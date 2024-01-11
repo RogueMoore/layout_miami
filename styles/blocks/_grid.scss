@@ -21,7 +21,25 @@
         &--#{$start}-#{$end} {
           grid-column: #{$start} / #{$end + 1};
         }
+
+        &--desktop-#{$start}-#{$end} {
+          @include onDesktop {
+            grid-column: #{$start} / #{$end + 1};
+          }
+        }
       }
+    }
+    &__item--1-8 {
+      grid-template-columns: repeat(1, 1fr, 8);
+    }
+    &__item--9-12 {
+      grid-template-columns: repeat(9, 1fr, 12);
+    }
+    &__item--1-4 {
+      grid-template-columns: repeat(1, 1fr, 4);
+    }
+    &__item--5-12 {
+      grid-template-columns: repeat(5, 1fr, 12);
     }
   }
 }
