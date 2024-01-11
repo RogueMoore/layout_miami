@@ -36,7 +36,7 @@
   }
 
   &__section-title {
-    margin-bottom: 32px;
+    margin: 0 0 32px;
 
     color: #000;
     text-align: center;
@@ -44,6 +44,12 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -1.5px;
+
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 700;
+    }
 
     &::after {
       content: "";
