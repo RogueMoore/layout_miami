@@ -19,6 +19,13 @@
 .page__section {
   margin: 0 0 64px 0;
 }
+@media (min-width: 1024px) {
+  .page__section {
+    margin-bottom: 104px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
 .page__section-title {
   color: #000;
   text-align: center;
@@ -469,6 +476,48 @@
 .menu__call--action {
   padding-bottom: 8px;
   border-bottom: 1px solid #fff;
+}
+
+.about__title {
+  margin: 0 0 48px;
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1.5px;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .about__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+.about__title-link {
+  color: #0075ff;
+  text-decoration: none;
+}
+.about__subtitle {
+  display: block;
+  margin-bottom: 16px;
+  color: #0075ff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.about__paragraph {
+  margin: 0 0 27px;
+  color: #3e3e3e;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 27px;
+}
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+.about__paragraph--important {
+  font-weight: 700;
 }
 
 .footer {

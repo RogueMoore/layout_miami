@@ -21,7 +21,13 @@
   }
 
   &__section {
-    margin: 0 0 64px 0;
+    margin: 0 0 64px 0; 
+
+    @include onDesktop {
+      margin-bottom: 104px; 
+      font-size: 48px;
+      line-height: 48px;
+    }
   }
 
   &__section-title {
