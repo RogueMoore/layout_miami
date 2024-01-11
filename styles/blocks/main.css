@@ -9,6 +9,9 @@
 .page__body {
   margin: 0;
 }
+.page__body--with-menu {
+  overflow: hidden;
+}
 .page__menu {
   position: fixed;
   top: 0;
@@ -788,6 +791,12 @@
   height: 100vh;
   padding: 24px 0 80px;
 }
+.header__top {
+  display: grid;
+  grid-template-columns: 18px 1fr 18px;
+  justify-items: center;
+  align-items: center;
+}
 .header__call {
   text-decoration: none;
 }
@@ -848,6 +857,10 @@
   box-sizing: border-box;
 }
 .menu__top {
+  display: grid;
+  grid-template-columns: 18px 1fr 18px;
+  justify-items: center;
+  align-items: center;
   margin-bottom: 48px;
 }
 .menu__list {
