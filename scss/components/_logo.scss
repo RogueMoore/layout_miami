@@ -1,0 +1,12 @@
+.logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 76px;
+  height: 46px;
+
+  @include onDesktop {
+    width: 136px;
+    height: 80px;
+  }
+}
