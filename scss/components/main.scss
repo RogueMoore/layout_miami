@@ -1,5 +1,5 @@
-@import "./variables";
-@import "./mixins";
+@import "../utils/variables";
+@import "../utils/mixins";
 
 @import "./page";
 @import "./container";
@@ -7,7 +7,6 @@
 
 @import "./logo";
 @import "./icon";
-@import "./top-action";
 @import "./header";
 @import "./menu";
 @import "./about";
