@@ -1,0 +1,39 @@
+.about {
+  &__title {
+    margin: 0 0 48px 0;
+
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+  &__title-link {
+    color: #0075ff;
+  }
+
+  &__sub-title-link {
+    display: block;
+    margin: 0 0 16px 0;
+    color: #0075ff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__text {
+    margin: 0 0 40px 0;
+    color: #3e3e3e;
+    font-size: 16px;
+    line-height: 27px;
+    &--bold {
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+}

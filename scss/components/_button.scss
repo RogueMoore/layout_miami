@@ -1,0 +1,25 @@
+.button {
+  cursor: pointer;
+  background: none;
+  &__gallery {
+    display: block;
+    padding: 21px 46px 21px 46px;
+    margin: 0 auto;
+
+    border: 2px solid #0075ff;
+    border-radius: 8px;
+
+    color: #0075ff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 14px;
+
+    width: 100%;
+    max-width: 100%;
+
+    @include onDesktop {
+      width: fit-content;
+    }
+  }
+}

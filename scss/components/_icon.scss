@@ -45,10 +45,12 @@
       pointer-events: none;
       opacity: 0;
     }
-    &:hover::before {
-      pointer-events: all;
-      opacity: 1;
-    }
+@include onDesktop {
+  &:hover::before {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
 
     @include onDesktop {
       width: 24px;
