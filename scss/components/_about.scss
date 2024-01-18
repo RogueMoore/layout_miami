@@ -14,13 +14,13 @@
     }
   }
   &__title-link {
-    color: #0075ff;
+    color: $main-blue-color;
   }
 
   &__sub-title-link {
     display: block;
     margin: 0 0 16px 0;
-    color: #0075ff;
+    color: $main-blue-color;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
@@ -28,9 +28,8 @@
 
   &__text {
     margin: 0 0 40px 0;
-    color: #3e3e3e;
-    font-size: 16px;
-    line-height: 27px;
+    @include text-option;
+
     &--bold {
       margin: 0;
       font-weight: 700;

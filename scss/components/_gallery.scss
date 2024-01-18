@@ -35,11 +35,9 @@
   &__text {
     margin: 0 0 32px 0;
 
-    color: #3e3e3e;
-    font-size: 16px;
-    line-height: 27px;
+    @include text-option;
     &-link {
-      color: #0075ff;
+      color: $main-blue-color;
       font-weight: bold;
     }
 

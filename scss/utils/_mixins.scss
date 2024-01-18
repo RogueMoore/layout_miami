@@ -10,3 +10,17 @@
   justify-items: center;
   align-items: center;
 }
+
+@mixin flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-option {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+
+  color: $text-grey-color;
+}

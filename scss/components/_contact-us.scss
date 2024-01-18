@@ -28,9 +28,7 @@
   }
 
   &__link {
-    color: #3e3e3e;
-    font-size: 16px;
-    line-height: 27px;
+    @include text-option;
   }
 
   &__form-content {
@@ -71,7 +69,7 @@
     }
 
     &:focus {
-      border: 2px solid #0075ff;
+      border: 2px solid $main-blue-color;
     }
   }
 
