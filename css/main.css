@@ -803,7 +803,7 @@ a {
 }
 
 .header {
-  background-image: url(/src/images/header-image.png);
+  background-image: url(./../../src/images/main-pictures/header-image.png);
   background-position: center;
   background-size: cover;
 }
@@ -1266,7 +1266,7 @@ a {
           align-items: flex-end;
   height: 206px;
   width: 100%;
-  background-image: url(/src/images/footer-background.png);
+  background-image: url(./../../src/images/main-pictures/footer-background.png);
   background-position: center;
   background-size: cover;
   -webkit-box-sizing: content-box;
