@@ -20,6 +20,12 @@
     }
   }
 
+  &--cross {
+    background-image: url(/src/images/svg/cross.svg);
+    width: 24px;
+    height: 24px;
+  }
+
   &--call {
     position: relative;
     background-image: url(/src/images/svg/call-icon.svg);
